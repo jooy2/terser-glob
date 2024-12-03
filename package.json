@@ -1,0 +1,64 @@
+{
+  "name": "terser-glob",
+  "version": "1.0.0",
+  "description": "A CLI module that allows you to work with multiple files at once using the glob pattern in the terser cli.",
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "author": "CDGet <jooy2.contact@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/jooy2/terser-glob",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jooy2/terser-glob"
+  },
+  "bugs": {
+    "url": "https://github.com/jooy2/terser-glob/issues"
+  },
+  "main": "dist/index.js",
+  "bin": "dist/index.js",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "scripts": {
+    "test": "npm run build && node dist/index.js",
+    "build": "npm run format:fix && tsc && npm run minify",
+    "minify": "terser dist/index.js --config-file .terserrc -o dist/index.js",
+    "format": "prettier .",
+    "format:fix": "prettier . --write"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "typesVersions": {
+    "*": {
+      "index.d.ts": [
+        "dist/index.d.ts"
+      ]
+    }
+  },
+  "keywords": [
+    "terser",
+    "terserjs",
+    "minify",
+    "compress",
+    "uglify",
+    "uglifyjs",
+    "plugin"
+  ],
+  "devDependencies": {
+    "@types/node": "^22.7.9",
+    "@typescript-eslint/eslint-plugin": "7.18.0",
+    "@typescript-eslint/parser": "7.18.0",
+    "eslint": "8.57.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-import": "^2.31.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "glob": "^11.0.0",
+    "meow": "^13.2.0",
+    "terser": "^5.36.0"
+  }
+}
