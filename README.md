@@ -4,7 +4,7 @@
 
 A CLI module that allows you to work with multiple files at once using the glob pattern in the terser cli.
 
-To learn how to use the Terser CLI, follow these links: https://github.com/terser/terser?tab=readme-ov-file#command-line-usage
+To learn how to use the Terser CLI, follow these links: https://terser.org/docs/cli-usage
 
 ## How-to-use
 
@@ -12,6 +12,21 @@ To learn how to use the Terser CLI, follow these links: https://github.com/terse
 
 - You can use the `glob` pattern for file paths (paths must be enclosed in quotes). You can also specify each file individually without using the glob pattern.
 - If an output path is set, it must be a directory. We currently do not support combining multiple files into one.
+
+### Installation
+
+```shell
+# via npm
+$ npm i -D terser-glob
+
+# via yarn
+$ yarn add -D terser-glob
+
+# via pnpm
+$ pnpm i -D terser-glob
+```
+
+### CLI usage
 
 ```text
 terser-glob filePathOrGlobPattern [terser-cli-options]
