@@ -58,3 +58,4 @@ $RECYCLE.BIN/
 
 # Project files
 dist/
+test/result/
