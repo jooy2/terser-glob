@@ -1,6 +1,6 @@
 {
   "name": "terser-glob",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A CLI module that allows you to work with multiple files at once using the glob pattern in the terser cli.",
   "type": "module",
   "types": "dist/index.d.ts",
