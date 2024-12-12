@@ -4,6 +4,8 @@
 
 A CLI module that allows you to work with multiple files at once using the glob pattern in the terser cli.
 
+This resolves issues [#544](https://github.com/terser/terser/issues/544) and [#866](https://github.com/terser/terser/issues/866) in `terser`.
+
 To learn how to use the Terser CLI, follow these links: https://terser.org/docs/cli-usage
 
 ## How-to-use
@@ -26,7 +28,11 @@ $ yarn add -D terser-glob
 $ pnpm i -D terser-glob
 ```
 
+The `terser` package is included as a dependency in `terser-glob`, so you don't need to install it separately.
+
 ### CLI usage
+
+Just replace the existing `terser` command with `terser-glob`!
 
 ```text
 terser-glob filePathOrGlobPattern [terser-cli-options]
