@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import meow, { type Result, Options } from 'meow';
 import { minify, type MinifyOptions, MinifyOutput } from 'terser';
 import { glob } from 'glob';
@@ -52,7 +50,7 @@ async function isFileExists(filePath: string): Promise<boolean> {
   try {
     await access(filePath, constants.F_OK);
     return true;
-  } catch (error) {
+  } catch {
     return false;
   }
 }
@@ -112,7 +110,7 @@ async function run(): Promise<void> {
       for (let i = 0; i < Object.entries(jsonData).length; i += 1) {
         const [key, value] = Object.entries(jsonData)[i];
 
-        // @ts-ignore
+        // @ts-expect-error ignore
         defaultConfigs[key] = value;
       }
     } catch (err) {

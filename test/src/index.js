@@ -1,4 +1,3 @@
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 function arrShuffle(array) {
   if (array.length === 1) {
     return array[0];
