@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.0 (2026-03-26)
+
+- Package dependencies upgrade
+
 ## 1.1.0 (2024-12-05)
 
 - Support `config-file` option
