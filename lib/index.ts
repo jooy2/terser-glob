@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import meow, { type Result, Options } from 'meow';
 import { minify, type MinifyOptions, MinifyOutput } from 'terser';
 import { glob } from 'glob';

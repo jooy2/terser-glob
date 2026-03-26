@@ -40,6 +40,7 @@ export default defineConfig([
       'no-trailing-spaces': 'error',
       'no-unsafe-optional-chaining': 'off',
       'no-control-regex': 'off',
+      'n/hashbang': 'off',
       'n/no-missing-import': 'off',
       'n/no-unpublished-import': 'off',
       'n/no-unsupported-features/node-builtins': 'off',
