@@ -1,6 +1,6 @@
 {
   "name": "terser-glob",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A CLI module that allows you to work with multiple files at once using the glob pattern in the terser cli.",
   "type": "module",
   "types": "dist/index.d.ts",
@@ -21,6 +21,7 @@
   },
   "scripts": {
     "test": "npm run build && node dist/index.js 'test/src/**/*.js' -o test/result/ --debug",
+    "test:lib": "tsx lib 'test/src/**/*.js' -o test/result/ --debug",
     "build": "npm run format:fix && tsc && npm run minify",
     "minify": "terser dist/index.js --config-file terser.config.json -o dist/index.js",
     "lint": "eslint . --ext .js,.ts .",
@@ -57,6 +58,7 @@
     "globals": "^17.4.0",
     "jiti": "^2.6.1",
     "prettier": "^3.8.1",
+    "tsx": "^4.21.0",
     "typescript": "5.9.3",
     "typescript-eslint": "^8.57.2"
   },

@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.1 (2026-03-26)
+
+- Fix some node version does not detect index.js correctly
+
 ## 1.2.0 (2026-03-26)
 
 - Package dependencies upgrade
